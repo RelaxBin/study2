@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<title>我的收藏</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<style>
+			html{
+				font: 12px;
+			}
+			body {
+				font-size: 1rem;
+				font-family: "微软雅黑";
+				color: #000;
+				padding-top: 32px;
+				padding-bottom: 34px;
+			}
+			
+			a {
+				display: block;
+			}
+			.header {
+				position: fixed;
+				top: 0;
+				left: 0;
+				padding: 4px;
+				z-index: 99;
+			}
+			
+			.header .back {
+				font-size: 20px;
+			}
+			
+			.class-time .pull-left{
+				margin-right: 20px;
+			}
+			.color-gray{
+				color: #C0C0C0;
+			}
+			.text-sm{
+				font-size: 0.75em;
+			}
+			.body .list-group .list-group-item .row .col-xs-9{
+				padding-left: 0;
+			}
+			.header-btn {
+				margin-bottom: 10px;
+			}
+			.header-img {
+				position: relative;
+				padding-right: 0;
+				max-height: 100px;
+				max-width: 100px;
+			}
+			.header-img .best {
+				position: absolute;
+				left: 0;
+				top: 0;
+				display: block;
+				width: 40px;
+				height: 20px;
+				background: yellow;
+				transform: rotate(-45deg);
+				z-index: 3;
+			}
+			.row {
+				border-bottom: 1px solid #999;
+				padding-bottom: 10px;
+				margin-bottom: 10px;
+			}
+			h4.alert {
+				margin-bottom: 2px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="bg-primary header col-xs-12">
+			<a href="#" class="back btn btn-default btn-xs col-xs-2 text-center">
+				<i class="glyphicon glyphicon-arrow-left"></i>
+			</a>
+		</div>
+		<h4 class="alert alert-success text-center">我的收藏</h4>
+		<div class="body">
+			<div class="col-xs-12">
+				<div class="row">
+					<div class="col-xs-12 header-btn">
+						<button type="button" class="btn btn-default btn-sm pull-right">删除</button>
+					</div>
+					<div class="col-xs-4 col-sm-2 col-lg-1 header-img">
+						<span class="best"></span>
+						<img src="img/headerImg.png" class="img-responsive img-thumbnail"/>
+					</div>
+					<div class="col-xs-8 col-sm-10 col-lg-11">
+						<div class="clearfix">
+							<span  class="pull-left">培训班名字</span>
+							<span class="pull-right color-gray text-sm">府前几街</span>
+						</div>
+						<div class="clearfix">
+							<div class="pull-left">
+								<i class="glyphicon glyphicon-star"></i>
+								<i class="glyphicon glyphicon-star"></i>
+								<i class="glyphicon glyphicon-star"></i>
+								<i class="glyphicon glyphicon-star"></i>
+								<i class="glyphicon glyphicon-star"></i>
+							</div>
+							<p class="pull-right color-gray text-sm">
+								500m
+							</p>
+						</div>
+						<div class="clearfix">
+							<p class="pull-left">
+								培训范围:<span>小学初中高中</span>
+							</p>
+							<p class="pull-right color-gray">
+								已加入<span>130</span>人
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 header-btn">
+						<button type="button" class="btn btn-default btn-sm pull-right">删除</button>
+					</div>
+					<div class="col-xs-4 col-sm-2 col-lg-1 header-img">
+						<span class="best"></span>
+						<img src="img/headerImg.png" class="img-responsive img-thumbnail"/>
+					</div>
+					<div class="col-xs-8 col-sm-10 col-lg-11">
+						<div class="clearfix">
+							<span  class="pull-left">培训班名字</span>
+							<span class="pull-right color-gray text-sm">府前几街</span>
+						</div>
+						<div class="clearfix">
+							<div class="pull-left">
+								<i class="glyphicon glyphicon-star"></i>
+								<i class="glyphicon glyphicon-star"></i>
+								<i class="glyphicon glyphicon-star"></i>
+								<i class="glyphicon glyphicon-star"></i>
+								<i class="glyphicon glyphicon-star"></i>
+							</div>
+							<p class="pull-right color-gray text-sm">
+								500m
+							</p>
+						</div>
+						<div class="clearfix">
+							<p class="pull-left">
+								培训范围:<span>小学初中高中</span>
+							</p>
+							<p class="pull-right color-gray">
+								已加入<span>130</span>人
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

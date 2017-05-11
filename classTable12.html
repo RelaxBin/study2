@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<title>课表</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<style>
+			html{
+				font: 12px;
+			}
+			body {
+				font-size: 1rem;
+				font-family: "微软雅黑";
+				color: #000;
+				padding-top: 42px;
+				padding-bottom: 34px;
+			}
+			p,h4{
+				margin: 0;
+				padding: 0;
+			}
+			.header {
+				position: fixed;
+				top: 0;
+				left: 0;
+				padding: 4px;
+				z-index: 99;
+			}
+			
+			.header .back {
+				font-size: 20px;
+			}
+			.row{
+				padding-top: 4px;
+				padding-bottom: 4px;
+			}
+			.panel-body{
+				border-bottom: 1px solid #ADADAD;
+				position: relative;
+			}
+			.heart {
+				display: inline-block;
+				position: absolute;
+				right: 10px;
+				bottom: 14px;
+				font-size: 34px;
+				color: #fff;
+				text-shadow: 0 0 2px #000;
+			}
+			.love-box {
+				display: none;
+				position: fixed;
+				left: 50%;
+				top: 50%;
+				margin: -56px 0 0 -50px;
+				padding: 20px 0;
+				width: 100px;
+				background: rgba(0,0,0,0.7);
+				z-index: 999;
+				border-radius: 10px;
+			}
+			.love-box > p{
+				margin: 0;
+				font-size: 16px;
+				color: #fff;
+			}
+			.love-box > p > i {
+				font-size: 46px;
+				text-shadow: 0 0 4px #fff;
+			}
+			.text-red {
+				transition: color 0.2s;
+				color: #FF0000!important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="bg-primary header col-xs-12">
+			<a href="#" class="back btn btn-default btn-xs col-xs-2 text-center">
+				<i class="glyphicon glyphicon-arrow-left"></i>
+			</a>
+		</div>
+		<h4 class="alert alert-success text-center">课表</h4>
+		<!-- 主体部分 开始 -->
+		<div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						培训班名字
+					</h4>
+				</div>
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-xs-4 text-left">
+							课程：<span>吉他</span>
+						</div>
+						<div class="col-xs-4 text-center">
+							课时：<span>2.5*22</span>
+						</div>
+						<div class="col-xs-4 text-right">
+							开课：<span>7/18</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<span class="text-info pull-left">
+								报名费用：<span>2000</span>元
+							</span>
+							<a href="#" class="pull-right btn btn-default btn-xs">课表</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<span class="pull-left">
+								最低开课人数：<span>2</span>人
+							</span>
+							<span class="pull-right">
+								已加入：<span>3</span>人
+							</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<span class="pull-left">
+								地点：<span class="text-success">北京市解放了圣诞节发牢骚</span>人
+							</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<span class="pull-left text-info">
+								小提示：<span>北京市解放了圣诞节发牢骚</span>人
+							</span>
+						</div>
+					</div>
+					<div class="heart">
+						<i class="glyphicon glyphicon-heart"></i>
+					</div>
+				</div>
+			</div>
+			
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						培训班名字
+					</h4>
+				</div>
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-xs-4 text-left">
+							课程：<span>吉他</span>
+						</div>
+						<div class="col-xs-4 text-center">
+							课时：<span>2.5*22</span>
+						</div>
+						<div class="col-xs-4 text-right">
+							开课：<span>7/18</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<span class="text-info pull-left">
+								报名费用：<span>2000</span>元
+							</span>
+							<a href="#" class="pull-right btn btn-default btn-xs">课表</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<span class="pull-left">
+								最低开课人数：<span>2</span>人
+							</span>
+							<span class="pull-right">
+								已加入：<span>3</span>人
+							</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<span class="pull-left">
+								地点：<span class="text-success">北京市解放了圣诞节发牢骚</span>人
+							</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<span class="pull-left text-info">
+								小提示：<span>北京市解放了圣诞节发牢骚</span>人
+							</span>
+						</div>
+					</div>
+					<div class="heart">
+						<i class="glyphicon glyphicon-heart"></i>
+					</div>
+				</div>
+			</div>
+			
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						培训班名字
+					</h4>
+				</div>
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-xs-4 text-left">
+							课程：<span>吉他</span>
+						</div>
+						<div class="col-xs-4 text-center">
+							课时：<span>2.5*22</span>
+						</div>
+						<div class="col-xs-4 text-right">
+							开课：<span>7/18</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<span class="text-info pull-left">
+								报名费用：<span>2000</span>元
+							</span>
+							<a href="#" class="pull-right btn btn-default btn-xs">课表</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<span class="pull-left">
+								最低开课人数：<span>2</span>人
+							</span>
+							<span class="pull-right">
+								已加入：<span>3</span>人
+							</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<span class="pull-left">
+								地点：<span class="text-success">北京市解放了圣诞节发牢骚</span>人
+							</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<span class="pull-left text-info">
+								小提示：<span>北京市解放了圣诞节发牢骚</span>人
+							</span>
+						</div>
+					</div>
+					<div class="heart">
+						<i class="glyphicon glyphicon-heart"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="love-box text-center">
+			<p><i class="glyphicon glyphicon-heart"></i></p>
+			<p><span>收藏成功</span></p>
+		</div>
+		<!-- 主体部分 结束 -->
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				var timer = null;
+				var text = "收藏成功";
+				$(".heart").on("click", function() {
+					clearTimeout(timer);
+					$(".love-box").hide(200);
+					if ($(this).hasClass("text-red")) {
+						text = "取消收藏";
+						$(this).removeClass("text-red");
+						$(".love-box .glyphicon-heart").removeClass("text-red");
+					} else {
+						text = "收藏成功";
+						$(this).addClass("text-red");
+						$(".love-box .glyphicon-heart").addClass("text-red");
+					}
+					$(".love-box").show(200);
+					$(".love-box span").html(text);
+					timer = setTimeout(function() {
+						$(".love-box").hide(200);
+					}, 2000);
+				});
+			});
+		</script>
+	</body>
+
+</html>

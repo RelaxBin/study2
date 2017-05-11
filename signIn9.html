@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<title>签到</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<style>
+			html{
+				font: 12px;
+			}
+			body {
+				font-size: 1rem;
+				font-family: "微软雅黑";
+				color: #000;
+				padding-top: 42px;
+				padding-bottom: 50px;
+			}
+			
+			a {
+				display: block;
+			}
+			.header {
+				position: fixed;
+				top: 0;
+				left: 0;
+				padding: 4px;
+				z-index: 99;
+			}
+			
+			.header .back {
+				font-size: 20px;
+			}
+			.footer {
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+			}
+			.footer .alert {
+				margin-bottom: 0;
+			}
+			.header-info {
+				border-bottom: 1px solid #aaa;
+			}
+			.header-info P {
+				margin: 0;
+				padding: 0;
+				font-size: 16px;
+				font-weight: 800;
+				height: 40px;
+				line-height: 40px;
+			}
+			.btns-box{
+				padding: 20px;
+			}
+			.btns-box .glyphicon {
+				display: none;
+				position: relative;
+				top: 3px;
+				font-size: 24px;
+				color: green;
+			}
+			.btns-box p {
+				display: inline-block;
+				width: 50px;
+				height: 50px;
+				padding: 8px 0;
+				border: 1px solid #122B40;
+				border-radius: 10px;
+			}
+			.btns-box p span {
+				line-height: 1;
+			}
+			.love-box {
+				display: none;
+				position: fixed;
+				left: 50%;
+				top: 50%;
+				margin: -56px 0 0 -60px;
+				padding: 20px 0;
+				width: 140px;
+				background: rgba(0,0,0,0.7);
+				z-index: 999;
+				border-radius: 10px;
+			}
+			.love-box > p{
+				margin: 0;
+				font-size: 16px;
+				color: #fff;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="bg-primary header col-xs-12">
+			<a href="goSignIn7.html" class="back btn btn-default btn-xs col-xs-2 text-center">
+				<i class="glyphicon glyphicon-arrow-left"></i>
+			</a>
+		</div>
+		<div>
+			<div class="header-info text-center">
+				<p>签到时间3月18日——3月30日</p>
+				<p>签到指定日期，可获得代金券哦~</p>
+			</div>
+			<div class="row text-center btns-box">
+				<div class="col-xs-3">
+					<p>
+						<a href="javascript: void(0)">
+							￥10
+							代金券
+						</a>
+						<i class="glyphicon glyphicon-ok"></i>
+					</p>
+				</div>
+				<div class="col-xs-3">
+					<p>
+						<a href="javascript: void(0)">
+							￥10
+							代金券
+						</a>
+						<i class="glyphicon glyphicon-ok"></i>
+					</p>
+				</div>
+				<div class="col-xs-3">
+					<p>
+						<a href="javascript: void(0)">
+							￥10
+							代金券
+						</a>
+						<i class="glyphicon glyphicon-ok"></i>
+					</p>
+				</div>
+				<div class="col-xs-3">
+					<p>
+						<a href="javascript: void(0)">
+							￥10
+							代金券
+						</a>
+						<i class="glyphicon glyphicon-ok"></i>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="footer text-center">
+			<p class="alert alert-info">
+				没24小时可签到一次，每日18点后刷新签到
+			</p>
+		</div>
+		<div class="love-box text-center">
+			<p>未到签到时间</p>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				var timer = null;
+				var index = 1;
+				
+				$(".btns-box p").click(function(){
+					if (timer) clearTimeout(timer);
+					$(".love-box").slideUp(100);
+					// 在这里判断签到成功、者失败或者没有权限
+					if (index == 0) {
+						$(this).find("a").css("display", "none").next("i").css("display", "inline-block");
+						$(".love-box p").html("获得xxx代金券");
+					} else if (index == 1) {
+						$(".love-box p").html("未到签到时间");
+					} else {
+						window.location.href = "noSignIn.html";
+					}
+					
+					$(".love-box").slideDown(200);
+					timer = setTimeout(function(){
+						$(".love-box").slideUp(200);
+					}, 2000);
+				});
+				
+			});
+		</script>
+	</body>
+</html>
